@@ -1,0 +1,51 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="12.607156">
+<testsuite name="Reporters.spec.js" timestamp="2024-08-12T03:24:42.309Z" hostname="chromium" tests="3" failures="1" skipped="0" time="11.293" errors="0">
+<testcase name="Test1" classname="Reporters.spec.js" time="2.424">
+</testcase>
+<testcase name="Test2" classname="Reporters.spec.js" time="1.911">
+</testcase>
+<testcase name="Test3" classname="Reporters.spec.js" time="6.958">
+<failure message="Reporters.spec.js:16:5 Test3" type="FAILURE">
+<![CDATA[  [chromium] › Reporters.spec.js:16:5 › Test3 ──────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveTitle(expected)
+
+    Locator: locator(':root')
+    Expected string: "Goodfsgle"
+    Received string: "Google"
+    Call log:
+      - expect.toHaveTitle with timeout 5000ms
+      - waiting for locator(':root')
+      -   locator resolved to <html itemscope="" lang="en-NZ" itemtype="http://schema.org/WebPage">…</html>
+      -   unexpected value "Google"
+      -   locator resolved to <html itemscope="" lang="en-NZ" itemtype="http://schema.org/WebPage">…</html>
+      -   unexpected value "Google"
+      -   locator resolved to <html itemscope="" lang="en-NZ" itemtype="http://schema.org/WebPage">…</html>
+      -   unexpected value "Google"
+      -   locator resolved to <html itemscope="" lang="en-NZ" itemtype="http://schema.org/WebPage">…</html>
+      -   unexpected value "Google"
+      -   locator resolved to <html itemscope="" lang="en-NZ" itemtype="http://schema.org/WebPage">…</html>
+      -   unexpected value "Google"
+      -   locator resolved to <html itemscope="" lang="en-NZ" itemtype="http://schema.org/WebPage">…</html>
+      -   unexpected value "Google"
+      -   locator resolved to <html itemscope="" lang="en-NZ" itemtype="http://schema.org/WebPage">…</html>
+      -   unexpected value "Google"
+      -   locator resolved to <html itemscope="" lang="en-NZ" itemtype="http://schema.org/WebPage">…</html>
+      -   unexpected value "Google"
+      -   locator resolved to <html itemscope="" lang="en-NZ" itemtype="http://schema.org/WebPage">…</html>
+      -   unexpected value "Google"
+
+
+      17 | {
+      18 | await page.goto('https://www.google.com/') 
+    > 19 | await expect(page).toHaveTitle('Goodfsgle')         
+         |                    ^
+      20 | }
+      21 | )
+
+        at /Users/gauravkumar/pwautomation/tests/Reporters.spec.js:19:20
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>
